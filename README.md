@@ -1,3 +1,13 @@
+# This app idea came from BigFish.
+
+Bigfish gave this task as a test.
+
+# The task:
+
+- Create an application, which fetches current weather forecast information on startup from https://openweathermap.org/api and displays it in the browser.
+- The application must be written in TypeScript language with ReactJS framework.
+- Project must be on github, the repository should be available for BigFish.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
