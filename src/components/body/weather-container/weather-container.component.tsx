@@ -18,8 +18,6 @@ const WeatherContainer = (data: any) => {
         icon
     } = data.data;
 
-    console.log("Data: ", data);
-
     return (
         <div className='weather-container'>
             <h2 className="city">The weather in {city} ({country}) is {main} today</h2>

@@ -26,7 +26,6 @@ const Body = () => {
         fetch('http://api.openweathermap.org/data/2.5/weather?q=Budapest&appid=dc188740a6faebe07902f134609866d2&units=metric')
             .then(response => response.json())
             .then(response => {
-                console.log(response)
                 setWeatherData(
                     {
                         main: response.weather[0].main,
@@ -44,14 +43,24 @@ const Body = () => {
                     }
                 )
             })
-            .catch(error => console.log(error));
+            .catch(error => {
+                setGotNoResponse(true);
+                console.log(error);
+            });
     }, []);
 
     const [weatherData, setWeatherData] = useState<IWeatherData>(Object);
+    const [gotNoResponse, setGotNoResponse] = useState<boolean>(false);
+
 
     return (
         <div className='body-component'>
-            { Object.keys(weatherData).length > 0 ? <WeatherContainer data={weatherData} /> : <LoadingIndicator />}
+
+            {gotNoResponse ?
+                <div>Server is unreachable. <br /> Check your webconsole for more details.</div> :
+                <div>{Object.keys(weatherData).length > 0 ? <WeatherContainer data={weatherData} /> : <LoadingIndicator />}</div>
+            }
+
         </div>
     );
 };
