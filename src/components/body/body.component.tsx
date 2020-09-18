@@ -24,17 +24,32 @@ const Body = () => {
     useEffect(() => {
         fetch('http://api.openweathermap.org/data/2.5/weather?q=Budapest&appid=dc188740a6faebe07902f134609866d2')
             .then(response => response.json())
-            .then(response => console.log(response)/*/response => setResult({main: response.main})/*/)
-            .then(response => setWeatherData(response))
+            .then(response => {
+                console.log(response)
+                setWeatherData(
+                    {
+                        main: response.weather[0].main,
+                        description: response.weather[0].description,
+                        temp: response.main.temp,
+                        feelsLike: response.main.feelsLike,
+                        temp_min: response.main.temp_min,
+                        temp_max: response.main.temp_max,
+                        pressure: response.main.pressure,
+                        humidity: response.main.humidity,
+                        windSpeed: response.wind.ppeed,
+                        country: response.sys.country,
+                        city: response.name,
+                    }
+                )
+            })
             .catch(error => console.log(error));
     }, []);
 
     const [weatherData, setWeatherData] = useState<IWeatherData>(Object);
-    const [startedSearch, setStartedSearch] = useState<boolean>(false);
 
     return (
         <div className='body-component'>
-            { Object.keys(weatherData).length > 0 ? <WeatherContainer /> : <LoadingIndicator />}
+            { Object.keys(weatherData).length > 0 ? <WeatherContainer data={weatherData} /> : <LoadingIndicator />}
         </div>
     );
 };
