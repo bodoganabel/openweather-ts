@@ -4,7 +4,7 @@ import "./header.styles.scss";
 const Header = () => {
 
     return (
-        <div className='header-component'>Hello header!</div>
+        <div className='header-component'>Weather app</div>
     );
 };
 
