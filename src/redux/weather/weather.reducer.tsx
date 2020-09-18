@@ -4,7 +4,7 @@ const INITIAL_STATE = {
   currentWeather: [],
 };
 
-const weatherReducer = (state = INITIAL_STATE, action) => {
+const weatherReducer = (state = INITIAL_STATE, action: { type: any; payload: any; }) => {
   switch (action.type) {
     case WeatherActionTypes.SET_MOVIES:
       return {

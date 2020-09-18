@@ -26,17 +26,6 @@ const Body = () => {
     const [weatherData, setWeatherData] = useState({});
     const [startedSearch, setStartedSearch] = useState(false);
 
-    axios({
-        method: "GET",
-        url: "http://api.openweathermap.org/data/2.5/weather?q=Budapest&appid=dc188740a6faebe07902f134609866d2", //https://cors-anywhere.herokuapp.com/
-    }).then((response) => {
-        console.log(response);
-        setWeatherData(response);
-    })
-        .catch((error) => {
-            console.log(error);
-        });;
-
 
     return (
         <div className='body-component'>

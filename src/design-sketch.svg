@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   sodipodi:docname="design-sketch.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="109.45929"
+     inkscape:cy="322.6057"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="1280"
+     inkscape:window-height="971"
+     inkscape:window-x="1912"
+     inkscape:window-y="57"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Réteg 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#aebdff;stroke:none;stroke-width:0.864814;fill-opacity:1"
+       id="rect837"
+       width="212.04465"
+       height="58.586308"
+       x="-1.1339285"
+       y="-1.1339285" />
+    <text
+       xml:space="preserve"
+       style="font-size:18.8879px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;fill:#ffffff;fill-opacity:1;stroke-width:0.472198"
+       x="28.35313"
+       y="36.966148"
+       id="text835"><tspan
+         sodipodi:role="line"
+         id="tspan833"
+         x="28.35313"
+         y="36.966148"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.472198">Weather fetcher</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18.8879px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;fill:#ffffff;fill-opacity:1;stroke-width:0.472199"
+       x="1.7118812"
+       y="108.75394"
+       id="text835-4"><tspan
+         sodipodi:role="line"
+         id="tspan833-2"
+         x="1.7118812"
+         y="108.75394"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.472199">Weather fetcher</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10.5833px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;stroke-width:0.264583"
+       x="12.095239"
+       y="80.130951"
+       id="text859"><tspan
+         sodipodi:role="line"
+         id="tspan857"
+         x="12.095239"
+         y="80.130951"
+         style="stroke-width:0.264583">Budapest weather:</tspan><tspan
+         sodipodi:role="line"
+         x="12.095239"
+         y="93.360077"
+         style="stroke-width:0.264583"
+         id="tspan861" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10.5833px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;stroke-width:0.264583"
+       x="-188.61012"
+       y="80.886909"
+       id="text865"><tspan
+         sodipodi:role="line"
+         id="tspan863"
+         x="-188.61012"
+         y="80.886909"
+         style="stroke-width:0.264583">Loading Budapest's weather</tspan></text>
+  </g>
+</svg>
