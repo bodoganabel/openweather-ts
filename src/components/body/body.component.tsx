@@ -16,6 +16,7 @@ export interface IWeatherData {
     windSpeed?: number,
     country?: string,
     city?: string,
+    icon?: string
 }
 
 
@@ -39,6 +40,7 @@ const Body = () => {
                         windSpeed: response.wind.speed,
                         country: response.sys.country,
                         city: response.name,
+                        icon: response.weather[0].icon
                     }
                 )
             })
