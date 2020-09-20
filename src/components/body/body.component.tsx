@@ -23,7 +23,7 @@ export interface IWeatherData {
 const Body = () => {
 
     useEffect(() => {
-        fetch('http://api.openweathermap.org/data/2.5/weather?q=Budapest&appid=dc188740a6faebe07902f134609866d2&units=metric')
+        fetch('https://api.openweathermap.org/data/2.5/weather?q=Budapest&appid=dc188740a6faebe07902f134609866d2&units=metric')
             .then(response => response.json())
             .then(response => {
                 setWeatherData(
